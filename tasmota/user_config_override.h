@@ -120,6 +120,8 @@ Examples :
 #undef USE_MCP39F501                            // Add support for MCP39F501 Energy monitor as used in Shelly 2 (+3k1 code)
 #undef USE_IR_REMOTE                            // Send IR remote commands using library IRremoteESP8266 and ArduinoJson (+4k3 code, 0k3 mem, 48 iram)
 
+#ifndef FIRMWARE_LITE
 #define FIRMWARE_LITE                            // Create tasmota-lite with no sensors
+#endif
 
 #endif  // _USER_CONFIG_OVERRIDE_H_
